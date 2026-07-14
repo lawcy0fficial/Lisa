@@ -8,12 +8,39 @@
 
 <br/><br/>
 
-[![Made with HTML](https://img.shields.io/badge/HTML5-0A0E12?style=for-the-badge&logo=html5&logoColor=33D6C0)](.)
-[![Made with CSS](https://img.shields.io/badge/CSS3-0A0E12?style=for-the-badge&logo=css3&logoColor=33D6C0)](.)
-[![Made with JS](https://img.shields.io/badge/JavaScript-0A0E12?style=for-the-badge&logo=javascript&logoColor=33D6C0)](.)
-[![No Dependencies](https://img.shields.io/badge/dependencies-none-0A0E12?style=for-the-badge&labelColor=0A0E12&color=52D273)](.)
-[![License](https://img.shields.io/badge/license-MIT-0A0E12?style=for-the-badge&labelColor=0A0E12&color=A78BFA)](LICENSE)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-0A0E12?style=for-the-badge&labelColor=0A0E12&color=FF9A63)](.)
+<!-- more tech & build badges -->
+[![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-0A0E12?style=for-the-badge&logo=githubpages&logoColor=33D6C0)](.)
+[![Markdown](https://img.shields.io/badge/Markdown-0A0E12?style=for-the-badge&logo=markdown&logoColor=A78BFA)](.)
+[![JSON](https://img.shields.io/badge/JSON-0A0E12?style=for-the-badge&logo=json&logoColor=FF9A63)](.)
+[![Git](https://img.shields.io/badge/Git-0A0E12?style=for-the-badge&logo=git&logoColor=FF4D6A)](.)
+[![Open Source](https://img.shields.io/badge/Open_Source-0A0E12?style=for-the-badge&logo=opensourceinitiative&logoColor=52D273)](.)
+[![SVG](https://img.shields.io/badge/SVG-0A0E12?style=for-the-badge&logo=svg&logoColor=5B9DFF)](.)
+
+<!-- project stats — swap <user>/<repo> for your real path once pushed -->
+[![Stars](https://img.shields.io/github/stars/<user>/<repo>?style=for-the-badge&labelColor=0A0E12&color=33D6C0)](.)
+[![Forks](https://img.shields.io/github/forks/<user>/<repo>?style=for-the-badge&labelColor=0A0E12&color=52D273)](.)
+[![Last Commit](https://img.shields.io/github/last-commit/<user>/<repo>?style=for-the-badge&labelColor=0A0E12&color=A78BFA)](.)
+[![Repo Size](https://img.shields.io/github/repo-size/<user>/<repo>?style=for-the-badge&labelColor=0A0E12&color=FF9A63)](.)
+[![Issues](https://img.shields.io/github/issues/<user>/<repo>?style=for-the-badge&labelColor=0A0E12&color=FF4D6A)](.)
+[![Contributors](https://img.shields.io/github/contributors/<user>/<repo>?style=for-the-badge&labelColor=0A0E12&color=5B9DFF)](.)
+
+<!-- thematic / identity badges -->
+[![Test Cases](https://img.shields.io/badge/test_cases-20%2C200-0A0E12?style=for-the-badge&labelColor=0A0E12&color=33D6C0)](.)
+[![Categories](https://img.shields.io/badge/categories-75-0A0E12?style=for-the-badge&labelColor=0A0E12&color=FF9A63)](.)
+[![Domains](https://img.shields.io/badge/attack_domains-7-0A0E12?style=for-the-badge&labelColor=0A0E12&color=5B9DFF)](.)
+[![Zero Telemetry](https://img.shields.io/badge/telemetry-zero-0A0E12?style=for-the-badge&labelColor=0A0E12&color=52D273)](.)
+[![No Backend](https://img.shields.io/badge/backend-none-0A0E12?style=for-the-badge&labelColor=0A0E12&color=FF4D6A)](.)
+[![No Tracking](https://img.shields.io/badge/tracking-none-0A0E12?style=for-the-badge&labelColor=0A0E12&color=A78BFA)](.)
+[![Offline Capable](https://img.shields.io/badge/offline-capable-0A0E12?style=for-the-badge&labelColor=0A0E12&color=5B9DFF)](.)
+[![Bug Bounty Ready](https://img.shields.io/badge/bug_bounty-ready-0A0E12?style=for-the-badge&labelColor=0A0E12&color=33D6C0)](.)
+[![Pentest Approved](https://img.shields.io/badge/pentest-approved-0A0E12?style=for-the-badge&labelColor=0A0E12&color=FF4D6A)](.)
+[![Mobile Friendly](https://img.shields.io/badge/mobile-friendly-0A0E12?style=for-the-badge&labelColor=0A0E12&color=A78BFA)](.)
+[![Dark Mode](https://img.shields.io/badge/dark_mode-native-0A0E12?style=for-the-badge&labelColor=0A0E12&color=33D6C0)](.)
+[![Responsive](https://img.shields.io/badge/responsive-design-0A0E12?style=for-the-badge&labelColor=0A0E12&color=FF9A63)](.)
+[![Keyboard Accessible](https://img.shields.io/badge/keyboard-accessible-0A0E12?style=for-the-badge&labelColor=0A0E12&color=5B9DFF)](.)
+[![Maintained](https://img.shields.io/badge/maintained-yes-0A0E12?style=for-the-badge&labelColor=0A0E12&color=52D273)](.)
+[![Status](https://img.shields.io/badge/status-active-0A0E12?style=for-the-badge&labelColor=0A0E12&color=33D6C0)](.)
+[![Made with Love](https://img.shields.io/badge/made_with-%E2%9D%A4-0A0E12?style=for-the-badge&labelColor=0A0E12&color=FF4D6A)](.)
 
 <sup>▲ replace the badge links above with your own repo URL once it's live — see <a href="#-deploy-to-github-pages-in-3-minutes">Deploy</a></sup>
 
