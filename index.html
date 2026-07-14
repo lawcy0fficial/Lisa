@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>LISA// Offensive Web Testing Manifest</title>
+<meta name="description" content="A 20,200-item interactive checklist for bug bounty hunting and whitebox web application penetration testing." />
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2244%22 fill=%22none%22 stroke=%22%2333D6C0%22 stroke-width=%228%22/><circle cx=%2250%22 cy=%2250%22 r=%2222%22 fill=%22none%22 stroke=%22%2333D6C0%22 stroke-width=%228%22/><circle cx=%2250%22 cy=%2250%22 r=%226%22 fill=%22%2333D6C0%22/></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="boot-active">
+
+<div id="bootOverlay" aria-hidden="true">
+  <div class="boot-console" id="bootConsole"></div>
+</div>
+
+<div class="scanlines" aria-hidden="true"></div>
+<div class="noise" aria-hidden="true"></div>
+
+<!-- ============ TOP BAR ============ -->
+<header class="topbar">
+  <button id="navToggle" class="nav-toggle" aria-label="Toggle category index" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+
+  <div class="brand">
+    <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+      <circle cx="20" cy="20" r="17.5" fill="none" stroke="currentColor" stroke-width="2.5"/>
+      <circle cx="20" cy="20" r="9" fill="none" stroke="currentColor" stroke-width="2.5"/>
+      <circle cx="20" cy="20" r="2.5" fill="currentColor"/>
+      <line x1="20" y1="1" x2="20" y2="7" stroke="currentColor" stroke-width="2.5"/>
+      <line x1="20" y1="33" x2="20" y2="39" stroke="currentColor" stroke-width="2.5"/>
+      <line x1="1" y1="20" x2="7" y2="20" stroke="currentColor" stroke-width="2.5"/>
+      <line x1="33" y1="20" x2="39" y2="20" stroke="currentColor" stroke-width="2.5"/>
+    </svg>
+    <div class="brand-text">
+      <span class="brand-title" id="brandTitle" data-text="LISA//">LISA<span class="slash">//</span></span>
+      <span class="brand-sub">offensive web testing manifest</span>
+    </div>
+  </div>
+
+  <div class="search-wrap">
+    <svg viewBox="0 0 24 24" class="search-icon" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" d="M11 19a8 8 0 100-16 8 8 0 000 16zM21 21l-4.35-4.35"/></svg>
+    <input id="searchInput" type="text" placeholder="Search 20,200 test cases… ( / to focus )" autocomplete="off" spellcheck="false" />
+    <kbd class="search-kbd">/</kbd>
+  </div>
+
+  <div class="topbar-actions">
+    <button id="sevFilterBtn" class="chip" data-sev="all" title="Cycle severity filter: All → Critical → High → Medium → Low">
+      <span class="dot"></span><span id="sevFilterLabel">ALL SEV</span>
+    </button>
+    <button id="filterPending" class="chip" data-mode="all" title="Cycle view filter: All → Pending → Done → Flagged">
+      <span class="dot"></span><span id="filterLabel">ALL</span>
+    </button>
+    <button id="themeToggle" class="icon-btn" title="Toggle light / dark theme" aria-pressed="false">
+      <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M12 3a9 9 0 109 9c0-.46-.04-.92-.1-1.36a5.4 5.4 0 01-7.54-7.54C13.92 3.04 13.46 3 13 3z"/></svg>
+    </button>
+  </div>
+</header>
+
+<div class="app-shell">
+
+  <!-- ============ SIDEBAR ============ -->
+  <nav id="sidebar" class="sidebar" aria-label="Category index">
+    <div class="sidebar-inner">
+      <div class="sidebar-head">
+        <span>INDEX</span>
+        <span id="catCountLabel">75 SECTIONS</span>
+      </div>
+      <div class="profile-switcher">
+        <label for="profileSelect" class="profile-switcher-label">ENGAGEMENT</label>
+        <div class="profile-switcher-row">
+          <select id="profileSelect" aria-label="Active profile"></select>
+          <button id="profileNewBtn" type="button" class="mini-btn icon-only" title="New profile">+</button>
+          <button id="profileRenameBtn" type="button" class="mini-btn icon-only" title="Rename profile">✎</button>
+          <button id="profileDeleteBtn" type="button" class="mini-btn icon-only" title="Delete profile">🗑</button>
+        </div>
+      </div>
+      <ol id="catList" class="cat-list"></ol>
+      <div class="sidebar-foot">
+        <a href="https://github.com/" target="_blank" rel="noopener" id="repoLink" class="repo-link">
+          <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+          <span>View source</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+  <div id="sidebarBackdrop" class="sidebar-backdrop"></div>
+
+  <!-- ============ MAIN ============ -->
+  <main class="main">
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <canvas id="signalCanvas" class="signal-canvas" aria-hidden="true"></canvas>
+
+      <div class="hero-copy reveal-up" style="animation-delay:.05s">
+        <p class="eyebrow">for authorized bug bounty &amp; whitebox engagements only</p>
+        <h1>Every attack surface has<br/>a checkbox.</h1>
+        <p class="hero-desc">
+          A single-page, offline-capable test manifest for web application security assessments —
+          <strong id="statTotalInline">20,200</strong> test cases across <strong id="statCatsInline">75</strong> categories in
+          <strong>7</strong> attack-surface domains, from credential stuffing to prompt injection. Your progress is tracked locally in this browser and never leaves your machine.
+        </p>
+        <div class="hero-actions">
+          <button id="exportBadgeBtn" class="btn btn-primary">
+            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M12 16l-5-5h3V4h4v7h3l-5 5zM5 18h14v2H5z"/></svg>
+            Export progress target (.svg)
+          </button>
+          <button id="randomBtn" class="btn btn-ghost">Surprise me</button>
+          <button id="exportJsonBtn" class="btn btn-ghost">Export JSON</button>
+          <button id="exportMdBtn" class="btn btn-ghost">Export Markdown</button>
+          <button id="exportCsvBtn" class="btn btn-ghost">Export CSV</button>
+          <label class="btn btn-ghost file-btn">
+            Import JSON
+            <input type="file" id="importJsonInput" accept="application/json" hidden />
+          </label>
+          <button id="resetBtn" class="btn btn-danger-ghost">Reset</button>
+        </div>
+      </div>
+
+      <div class="hero-target reveal-up" id="heroTargetWrap" style="animation-delay:.15s" title="Overall completion — click to export">
+        <!-- radar target svg injected by JS -->
+      </div>
+    </section>
+
+    <!-- DOMAIN CLUSTER LEGEND / FILTER -->
+    <nav class="cluster-legend" id="clusterLegend" aria-label="Filter by attack domain"></nav>
+
+    <!-- STAT STRIP -->
+    <section class="stat-strip" id="statStrip"></section>
+
+    <!-- RESULTS META -->
+    <div class="results-meta" id="resultsMeta" hidden>
+      <span id="resultsCount"></span>
+      <button id="clearSearch" class="link-btn">clear search ×</button>
+    </div>
+
+    <!-- CATEGORIES TOOLBAR -->
+    <div class="categories-toolbar">
+      <span class="categories-toolbar-hint">Tip: press <kbd>/</kbd> to search · flag priority items with the star</span>
+      <span class="categories-toolbar-actions">
+        <button id="expandAllBtn" type="button" class="mini-btn">Expand all</button>
+        <button id="collapseAllBtn" type="button" class="mini-btn">Collapse all</button>
+      </span>
+    </div>
+
+    <!-- CATEGORIES -->
+    <section id="categories" class="categories"></section>
+
+    <footer class="site-footer">
+      <p>Built for defenders who think offensively. Scope everything. Test only what you're authorized to test.</p>
+      <p class="fine">Progress data is stored only in <code>localStorage</code> on this device — no server, no accounts, no telemetry.</p>
+    </footer>
+  </main>
+</div>
+
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<script src="data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
