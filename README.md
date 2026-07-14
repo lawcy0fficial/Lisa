@@ -240,7 +240,7 @@ git commit -m "Initial commit — LISA// checklist"
 
 # 2. push to GitHub
 git branch -M main
-git remote add origin https://github.com/<your-username>/<your-repo>.git
+git remote add origin https://github.com/lawcy0fficial/Lisa.git ( example )
 git push -u origin main
 ```
 
@@ -251,7 +251,7 @@ Then in your repo:
 GitHub will hand you a live URL within a minute or two — usually:
 
 ```
-https://<your-username>.github.io/<your-repo>/
+https://github.com/lawcy0fficial/Lisa.git
 ```
 
 That's it. No Actions workflow required (though you're welcome to add one — see [Contributing](#-contributing)).
