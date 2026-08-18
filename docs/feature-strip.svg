@@ -1,0 +1,126 @@
+<svg viewBox="0 0 1040 260" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+  <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#35e0c4"/>
+    <stop offset="55%" stop-color="#8b7cf6"/>
+    <stop offset="100%" stop-color="#5aa9ff"/>
+  </linearGradient>
+  <linearGradient id="brandGradH" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#35e0c4"/>
+    <stop offset="50%" stop-color="#8b7cf6"/>
+    <stop offset="100%" stop-color="#5aa9ff"/>
+  </linearGradient>
+  <radialGradient id="glowTeal" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#35e0c4" stop-opacity="0.55"/>
+    <stop offset="100%" stop-color="#35e0c4" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="glowPurple" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#8b7cf6" stop-opacity="0.5"/>
+    <stop offset="100%" stop-color="#8b7cf6" stop-opacity="0"/>
+  </radialGradient>
+  <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%">
+    <feGaussianBlur stdDeviation="4.2" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+  <filter id="bigGlow" x="-100%" y="-100%" width="300%" height="300%">
+    <feGaussianBlur stdDeviation="12" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+  <pattern id="gridPattern" width="28" height="28" patternUnits="userSpaceOnUse">
+    <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#35e0c4" stroke-opacity="0.06" stroke-width="1"/>
+  </pattern>
+</defs>
+
+<clipPath id="fc7"><rect width="1040" height="260" rx="18"/></clipPath>
+<g clip-path="url(#fc7)">
+<rect width="1040" height="260" fill="#080a0e"/><rect width="1040" height="260" fill="url(#gridPattern)"/>
+<circle cx="500" cy="130" r="380" fill="url(#glowPurple)" opacity="0.18"/>
+
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.00s" fill="freeze"/>
+    <animateTransform attributeName="transform" type="translate" values="0,18; 0,0" dur="0.5s" begin="0.00s" fill="freeze" calcMode="spline" keySplines="0.22 1 0.36 1"/>
+    <rect x="20.0" y="40" width="152.7" height="180" rx="14" fill="#0d1017" stroke="#35e0c4" stroke-opacity="0.4" filter="url(#softGlow)"/>
+    <circle cx="96.3" cy="98" r="26" fill="#35e0c4" opacity="0.14"/>
+    <text x="96.3" y="109" font-size="26" text-anchor="middle">&#9906;</text>
+    <text x="96.3" y="152" font-size="12.5" font-weight="700" fill="#e7ecf2" text-anchor="middle" style="font-family:'JetBrains Mono','Courier New',monospace">Command Palette</text>
+    <text x="96.3" y="172" font-size="9.5" fill="#7c8798" text-anchor="middle" style="font-family:'JetBrains Mono','Courier New',monospace">Ctrl+K fuzzy jump</text>
+    <circle cx="96.3" cy="98" r="26" fill="none" stroke="#35e0c4" stroke-width="1.5" opacity="0.5">
+      <animate attributeName="r" values="24;30;24" dur="3s" begin="0.00s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0.1;0.5" dur="3s" begin="0.00s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.12s" fill="freeze"/>
+    <animateTransform attributeName="transform" type="translate" values="0,18; 0,0" dur="0.5s" begin="0.12s" fill="freeze" calcMode="spline" keySplines="0.22 1 0.36 1"/>
+    <rect x="186.7" y="40" width="152.7" height="180" rx="14" fill="#0d1017" stroke="#8b7cf6" stroke-opacity="0.4" filter="url(#softGlow)"/>
+    <circle cx="263.0" cy="98" r="26" fill="#8b7cf6" opacity="0.14"/>
+    <text x="263.0" y="109" font-size="26" text-anchor="middle">&#128221;</text>
+    <text x="263.0" y="152" font-size="12.5" font-weight="700" fill="#e7ecf2" text-anchor="middle" style="font-family:'JetBrains Mono','Courier New',monospace">Private Notes</text>
+    <text x="263.0" y="172" font-size="9.5" fill="#7c8798" text-anchor="middle" style="font-family:'JetBrains Mono','Courier New',monospace">Local-only, per item</text>
+    <circle cx="263.0" cy="98" r="26" fill="none" stroke="#8b7cf6" stroke-width="1.5" opacity="0.5">
+      <animate attributeName="r" values="24;30;24" dur="3s" begin="0.12s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0.1;0.5" dur="3s" begin="0.12s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.24s" fill="freeze"/>
+    <animateTransform attributeName="transform" type="translate" values="0,18; 0,0" dur="0.5s" begin="0.24s" fill="freeze" calcMode="spline" keySplines="0.22 1 0.36 1"/>
+    <rect x="353.3" y="40" width="152.7" height="180" rx="14" fill="#0d1017" stroke="#ffb648" stroke-opacity="0.4" filter="url(#softGlow)"/>
+    <circle cx="429.7" cy="98" r="26" fill="#ffb648" opacity="0.14"/>
+    <text x="429.7" y="109" font-size="26" text-anchor="middle">&#128737;</text>
+    <text x="429.7" y="152" font-size="12.5" font-weight="700" fill="#e7ecf2" text-anchor="middle" style="font-family:'JetBrains Mono','Courier New',monospace">Real Playbooks</text>
+    <text x="429.7" y="172" font-size="9.5" fill="#7c8798" text-anchor="middle" style="font-family:'JetBrains Mono','Courier New',monospace">Tools + payloads</text>
+    <circle cx="429.7" cy="98" r="26" fill="none" stroke="#ffb648" stroke-width="1.5" opacity="0.5">
+      <animate attributeName="r" values="24;30;24" dur="3s" begin="0.24s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0.1;0.5" dur="3s" begin="0.24s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.36s" fill="freeze"/>
+    <animateTransform attributeName="transform" type="translate" values="0,18; 0,0" dur="0.5s" begin="0.36s" fill="freeze" calcMode="spline" keySplines="0.22 1 0.36 1"/>
+    <rect x="520.0" y="40" width="152.7" height="180" rx="14" fill="#0d1017" stroke="#5aa9ff" stroke-opacity="0.4" filter="url(#softGlow)"/>
+    <circle cx="596.3" cy="98" r="26" fill="#5aa9ff" opacity="0.14"/>
+    <text x="596.3" y="109" font-size="26" text-anchor="middle">&#9889;</text>
+    <text x="596.3" y="152" font-size="12.5" font-weight="700" fill="#e7ecf2" text-anchor="middle" style="font-family:'JetBrains Mono','Courier New',monospace">Instant Load</text>
+    <text x="596.3" y="172" font-size="9.5" fill="#7c8798" text-anchor="middle" style="font-family:'JetBrains Mono','Courier New',monospace">Zero blocking</text>
+    <circle cx="596.3" cy="98" r="26" fill="none" stroke="#5aa9ff" stroke-width="1.5" opacity="0.5">
+      <animate attributeName="r" values="24;30;24" dur="3s" begin="0.36s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0.1;0.5" dur="3s" begin="0.36s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.48s" fill="freeze"/>
+    <animateTransform attributeName="transform" type="translate" values="0,18; 0,0" dur="0.5s" begin="0.48s" fill="freeze" calcMode="spline" keySplines="0.22 1 0.36 1"/>
+    <rect x="686.7" y="40" width="152.7" height="180" rx="14" fill="#0d1017" stroke="#35e0c4" stroke-opacity="0.4" filter="url(#softGlow)"/>
+    <circle cx="763.0" cy="98" r="26" fill="#35e0c4" opacity="0.14"/>
+    <text x="763.0" y="109" font-size="26" text-anchor="middle">&#128241;</text>
+    <text x="763.0" y="152" font-size="12.5" font-weight="700" fill="#e7ecf2" text-anchor="middle" style="font-family:'JetBrains Mono','Courier New',monospace">Installable PWA</text>
+    <text x="763.0" y="172" font-size="9.5" fill="#7c8798" text-anchor="middle" style="font-family:'JetBrains Mono','Courier New',monospace">Offline-ready</text>
+    <circle cx="763.0" cy="98" r="26" fill="none" stroke="#35e0c4" stroke-width="1.5" opacity="0.5">
+      <animate attributeName="r" values="24;30;24" dur="3s" begin="0.48s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0.1;0.5" dur="3s" begin="0.48s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.60s" fill="freeze"/>
+    <animateTransform attributeName="transform" type="translate" values="0,18; 0,0" dur="0.5s" begin="0.60s" fill="freeze" calcMode="spline" keySplines="0.22 1 0.36 1"/>
+    <rect x="853.3" y="40" width="152.7" height="180" rx="14" fill="#0d1017" stroke="#8b7cf6" stroke-opacity="0.4" filter="url(#softGlow)"/>
+    <circle cx="929.7" cy="98" r="26" fill="#8b7cf6" opacity="0.14"/>
+    <text x="929.7" y="109" font-size="26" text-anchor="middle">&#127919;</text>
+    <text x="929.7" y="152" font-size="12.5" font-weight="700" fill="#e7ecf2" text-anchor="middle" style="font-family:'JetBrains Mono','Courier New',monospace">Live Search</text>
+    <text x="929.7" y="172" font-size="9.5" fill="#7c8798" text-anchor="middle" style="font-family:'JetBrains Mono','Courier New',monospace">306K items, 0 lag</text>
+    <circle cx="929.7" cy="98" r="26" fill="none" stroke="#8b7cf6" stroke-width="1.5" opacity="0.5">
+      <animate attributeName="r" values="24;30;24" dur="3s" begin="0.60s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0.1;0.5" dur="3s" begin="0.60s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+<rect x="0" y="0" width="1040" height="260" rx="18" fill="none" stroke="#35e0c4" stroke-opacity="0.22" stroke-width="1.5"/>
+</g>
+</svg>

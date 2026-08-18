@@ -1,0 +1,144 @@
+<svg viewBox="0 0 1000 500" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+  <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#35e0c4"/>
+    <stop offset="55%" stop-color="#8b7cf6"/>
+    <stop offset="100%" stop-color="#5aa9ff"/>
+  </linearGradient>
+  <linearGradient id="brandGradH" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#35e0c4"/>
+    <stop offset="50%" stop-color="#8b7cf6"/>
+    <stop offset="100%" stop-color="#5aa9ff"/>
+  </linearGradient>
+  <radialGradient id="glowTeal" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#35e0c4" stop-opacity="0.55"/>
+    <stop offset="100%" stop-color="#35e0c4" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="glowPurple" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#8b7cf6" stop-opacity="0.5"/>
+    <stop offset="100%" stop-color="#8b7cf6" stop-opacity="0"/>
+  </radialGradient>
+  <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%">
+    <feGaussianBlur stdDeviation="4.2" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+  <filter id="bigGlow" x="-100%" y="-100%" width="300%" height="300%">
+    <feGaussianBlur stdDeviation="12" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+  <pattern id="gridPattern" width="28" height="28" patternUnits="userSpaceOnUse">
+    <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#35e0c4" stroke-opacity="0.06" stroke-width="1"/>
+  </pattern>
+</defs>
+
+<clipPath id="fc4"><rect width="1000" height="500" rx="18"/></clipPath>
+<g clip-path="url(#fc4)">
+<rect width="1000" height="500" fill="#080a0e"/><rect width="1000" height="500" fill="url(#gridPattern)"/>
+<circle cx="500" cy="260" r="320" fill="url(#glowTeal)" opacity="0.25"/>
+
+<text x="34" y="42" font-size="14" letter-spacing="3" fill="#7c8798" style="font-family:'JetBrains Mono','Courier New',monospace">DATA ARCHITECTURE</text>
+<text x="34" y="70" font-size="20" fill="#e7ecf2" font-weight="700" style="font-family:'JetBrains Mono','Courier New',monospace">Manifest-first, lazy-chunked, offline-cached</text>
+
+
+  <g>
+    <path d="M 190 225 L 260 180" stroke="#5aa9ff" stroke-width="2" fill="none" stroke-dasharray="6 5" opacity="0.75">
+      <animate attributeName="stroke-dashoffset" values="0;-22" dur="1s" repeatCount="indefinite"/>
+    </path>
+    <circle r="3.5" fill="#5aa9ff" filter="url(#softGlow)">
+      <animateMotion path="M 190 225 L 260 180" dur="1.8s" begin="0.00s" repeatCount="indefinite"/>
+    </circle>
+    <text x="225.0" y="194.5" font-size="10.5" fill="#5aa9ff" text-anchor="middle" style="font-family:'JetBrains Mono','Courier New',monospace">GET /</text>
+  </g>
+  <g>
+    <path d="M 190 255 L 260 400" stroke="#5aa9ff" stroke-width="2" fill="none" stroke-dasharray="6 5" opacity="0.75">
+      <animate attributeName="stroke-dashoffset" values="0;-22" dur="1s" repeatCount="indefinite"/>
+    </path>
+    <circle r="3.5" fill="#5aa9ff" filter="url(#softGlow)">
+      <animateMotion path="M 190 255 L 260 400" dur="1.8s" begin="0.30s" repeatCount="indefinite"/>
+    </circle>
+    <text x="225.0" y="319.5" font-size="10.5" fill="#5aa9ff" text-anchor="middle" style="font-family:'JetBrains Mono','Courier New',monospace">install</text>
+  </g>
+  <g>
+    <path d="M 450 170 L 540 170" stroke="#35e0c4" stroke-width="2" fill="none" stroke-dasharray="6 5" opacity="0.75">
+      <animate attributeName="stroke-dashoffset" values="0;-22" dur="1s" repeatCount="indefinite"/>
+    </path>
+    <circle r="3.5" fill="#35e0c4" filter="url(#softGlow)">
+      <animateMotion path="M 450 170 L 540 170" dur="1.8s" begin="0.60s" repeatCount="indefinite"/>
+    </circle>
+    
+  </g>
+  <g>
+    <path d="M 450 410 L 540 410" stroke="#8b7cf6" stroke-width="2" fill="none" stroke-dasharray="6 5" opacity="0.75">
+      <animate attributeName="stroke-dashoffset" values="0;-22" dur="1s" repeatCount="indefinite"/>
+    </path>
+    <circle r="3.5" fill="#8b7cf6" filter="url(#softGlow)">
+      <animateMotion path="M 450 410 L 540 410" dur="1.8s" begin="0.90s" repeatCount="indefinite"/>
+    </circle>
+    
+  </g>
+  <g>
+    <path d="M 750 180 L 830 225" stroke="#ffb648" stroke-width="2" fill="none" stroke-dasharray="6 5" opacity="0.75">
+      <animate attributeName="stroke-dashoffset" values="0;-22" dur="1s" repeatCount="indefinite"/>
+    </path>
+    <circle r="3.5" fill="#ffb648" filter="url(#softGlow)">
+      <animateMotion path="M 750 180 L 830 225" dur="1.8s" begin="1.20s" repeatCount="indefinite"/>
+    </circle>
+    <text x="790.0" y="194.5" font-size="10.5" fill="#ffb648" text-anchor="middle" style="font-family:'JetBrains Mono','Courier New',monospace">on open</text>
+  </g>
+  <g>
+    <path d="M 750 400 L 830 275" stroke="#ffb648" stroke-width="2" fill="none" stroke-dasharray="6 5" opacity="0.75">
+      <animate attributeName="stroke-dashoffset" values="0;-22" dur="1s" repeatCount="indefinite"/>
+    </path>
+    <circle r="3.5" fill="#ffb648" filter="url(#softGlow)">
+      <animateMotion path="M 750 400 L 830 275" dur="1.8s" begin="1.40s" repeatCount="indefinite"/>
+    </circle>
+    <text x="790.0" y="329.5" font-size="10.5" fill="#ffb648" text-anchor="middle" style="font-family:'JetBrains Mono','Courier New',monospace">cached</text>
+  </g>
+
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.6s" begin="0.00s" fill="freeze"/>
+    <rect x="30" y="210" width="160" height="80" rx="12" fill="#0d1017" stroke="#5aa9ff" stroke-width="1.6" filter="url(#softGlow)"/>
+    <text x="110.0" y="244.0" font-size="14.5" font-weight="700" fill="#e7ecf2" text-anchor="middle" style="font-family:'JetBrains Mono','Courier New',monospace">BROWSER</text>
+    <text x="110.0" y="266.0" font-size="11.5" fill="#7c8798" text-anchor="middle" style="font-family:'JetBrains Mono','Courier New',monospace">GitHub Pages request</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.6s" begin="0.30s" fill="freeze"/>
+    <rect x="260" y="130" width="190" height="80" rx="12" fill="#0d1017" stroke="#35e0c4" stroke-width="1.6" filter="url(#softGlow)"/>
+    <text x="355.0" y="164.0" font-size="14.5" font-weight="700" fill="#e7ecf2" text-anchor="middle" style="font-family:'JetBrains Mono','Courier New',monospace">manifest.json</text>
+    <text x="355.0" y="186.0" font-size="11.5" fill="#7c8798" text-anchor="middle" style="font-family:'JetBrains Mono','Courier New',monospace">~185KB &#183; 208 categories</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.6s" begin="0.50s" fill="freeze"/>
+    <rect x="260" y="370" width="190" height="80" rx="12" fill="#0d1017" stroke="#8b7cf6" stroke-width="1.6" filter="url(#softGlow)"/>
+    <text x="355.0" y="404.0" font-size="14.5" font-weight="700" fill="#e7ecf2" text-anchor="middle" style="font-family:'JetBrains Mono','Courier New',monospace">service-worker.js</text>
+    <text x="355.0" y="426.0" font-size="11.5" fill="#7c8798" text-anchor="middle" style="font-family:'JetBrains Mono','Courier New',monospace">app-shell cache</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.6s" begin="0.70s" fill="freeze"/>
+    <rect x="540" y="130" width="210" height="80" rx="12" fill="#0d1017" stroke="#35e0c4" stroke-width="1.6" filter="url(#softGlow)"/>
+    <text x="645.0" y="164.0" font-size="14.5" font-weight="700" fill="#e7ecf2" text-anchor="middle" style="font-family:'JetBrains Mono','Courier New',monospace">data/categories/*.json</text>
+    <text x="645.0" y="186.0" font-size="11.5" fill="#7c8798" text-anchor="middle" style="font-family:'JetBrains Mono','Courier New',monospace">fetched on demand, 1 per open</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.6s" begin="0.90s" fill="freeze"/>
+    <rect x="540" y="370" width="210" height="80" rx="12" fill="#0d1017" stroke="#8b7cf6" stroke-width="1.6" filter="url(#softGlow)"/>
+    <text x="645.0" y="404.0" font-size="14.5" font-weight="700" fill="#e7ecf2" text-anchor="middle" style="font-family:'JetBrains Mono','Courier New',monospace">background preload</text>
+    <text x="645.0" y="426.0" font-size="11.5" fill="#7c8798" text-anchor="middle" style="font-family:'JetBrains Mono','Courier New',monospace">8-way concurrent, idle time</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.6s" begin="1.30s" fill="freeze"/>
+    <rect x="830" y="210" width="140" height="80" rx="12" fill="#0d1017" stroke="#ffb648" stroke-width="1.6" filter="url(#softGlow)"/>
+    <text x="900.0" y="244.0" font-size="14.5" font-weight="700" fill="#e7ecf2" text-anchor="middle" style="font-family:'JetBrains Mono','Courier New',monospace">RENDERED UI</text>
+    <text x="900.0" y="266.0" font-size="11.5" fill="#7c8798" text-anchor="middle" style="font-family:'JetBrains Mono','Courier New',monospace">instant, chunked</text>
+  </g>
+
+<rect x="0" y="0" width="1000" height="500" rx="18" fill="none" stroke="#35e0c4" stroke-opacity="0.22" stroke-width="1.5"/>
+</g>
+</svg>

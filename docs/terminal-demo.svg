@@ -1,0 +1,104 @@
+<svg viewBox="0 0 900 420" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+  <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#35e0c4"/>
+    <stop offset="55%" stop-color="#8b7cf6"/>
+    <stop offset="100%" stop-color="#5aa9ff"/>
+  </linearGradient>
+  <linearGradient id="brandGradH" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#35e0c4"/>
+    <stop offset="50%" stop-color="#8b7cf6"/>
+    <stop offset="100%" stop-color="#5aa9ff"/>
+  </linearGradient>
+  <radialGradient id="glowTeal" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#35e0c4" stop-opacity="0.55"/>
+    <stop offset="100%" stop-color="#35e0c4" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="glowPurple" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#8b7cf6" stop-opacity="0.5"/>
+    <stop offset="100%" stop-color="#8b7cf6" stop-opacity="0"/>
+  </radialGradient>
+  <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%">
+    <feGaussianBlur stdDeviation="4.2" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+  <filter id="bigGlow" x="-100%" y="-100%" width="300%" height="300%">
+    <feGaussianBlur stdDeviation="12" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+  <pattern id="gridPattern" width="28" height="28" patternUnits="userSpaceOnUse">
+    <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#35e0c4" stroke-opacity="0.06" stroke-width="1"/>
+  </pattern>
+</defs>
+
+<clipPath id="fc6"><rect width="900" height="420" rx="18"/></clipPath>
+<g clip-path="url(#fc6)">
+<rect width="900" height="420" fill="#080a0e"/><rect width="900" height="420" fill="url(#gridPattern)"/>
+<circle cx="820" cy="380" r="240" fill="url(#glowPurple)" opacity="0.35"/>
+
+<rect x="0" y="0" width="900" height="38" fill="#0d1017"/>
+<circle cx="24" cy="19" r="6" fill="#ff4d6a" opacity="0.8"/>
+<circle cx="46" cy="19" r="6" fill="#ffb648" opacity="0.8"/>
+<circle cx="68" cy="19" r="6" fill="#35e0c4" opacity="0.8"/>
+<text x="450.0" y="24" font-size="12" fill="#7c8798" text-anchor="middle" style="font-family:'JetBrains Mono','Courier New',monospace">recon@lisa &#8212; zsh &#8212; 120&#215;30</text>
+
+
+  <g>
+    <clipPath id="clip_60"><rect x="0" y="42" width="0" height="26">
+      <animate attributeName="width" values="0;840" dur="2.4s" begin="0.0s" fill="freeze" calcMode="linear"/>
+    </rect></clipPath>
+    <text x="40" y="60" font-size="15.5" style="font-family:'JetBrains Mono','Courier New',monospace" clip-path="url(#clip_60)">
+      <tspan fill="#35e0c4">root@recon:~$</tspan><tspan fill="#e7ecf2"> grep -R "prompt injection" ./checklist</tspan>
+    </text>
+  </g>
+  <g>
+    <clipPath id="clip_106"><rect x="0" y="88" width="0" height="26">
+      <animate attributeName="width" values="0;840" dur="1.2s" begin="2.6s" fill="freeze" calcMode="linear"/>
+    </rect></clipPath>
+    <text x="40" y="106" font-size="15.5" style="font-family:'JetBrains Mono','Courier New',monospace" clip-path="url(#clip_106)">
+      <tspan fill="#7c8798"></tspan><tspan fill="#e7ecf2">1,203 matches across 4 categories</tspan>
+    </text>
+  </g>
+  <g>
+    <clipPath id="clip_152"><rect x="0" y="134" width="0" height="26">
+      <animate attributeName="width" values="0;840" dur="2.8s" begin="4.1s" fill="freeze" calcMode="linear"/>
+    </rect></clipPath>
+    <text x="40" y="152" font-size="15.5" style="font-family:'JetBrains Mono','Courier New',monospace" clip-path="url(#clip_152)">
+      <tspan fill="#35e0c4">root@recon:~$</tspan><tspan fill="#e7ecf2"> checklist --open "AI Agent &amp; Tool-Use Security"</tspan>
+    </text>
+  </g>
+  <g>
+    <clipPath id="clip_198"><rect x="0" y="180" width="0" height="26">
+      <animate attributeName="width" values="0;840" dur="1.2s" begin="7.2s" fill="freeze" calcMode="linear"/>
+    </rect></clipPath>
+    <text x="40" y="198" font-size="15.5" style="font-family:'JetBrains Mono','Courier New',monospace" clip-path="url(#clip_198)">
+      <tspan fill="#7c8798">[data]</tspan><tspan fill="#e7ecf2"> loading 2,857 test cases… <tspan fill='#35e0c4'>OK</tspan></tspan>
+    </text>
+  </g>
+  <g>
+    <clipPath id="clip_244"><rect x="0" y="226" width="0" height="26">
+      <animate attributeName="width" values="0;840" dur="2.0s" begin="8.7s" fill="freeze" calcMode="linear"/>
+    </rect></clipPath>
+    <text x="40" y="244" font-size="15.5" style="font-family:'JetBrains Mono','Courier New',monospace" clip-path="url(#clip_244)">
+      <tspan fill="#35e0c4">root@recon:~$</tspan><tspan fill="#e7ecf2"> checklist --check P1 --category 1</tspan>
+    </text>
+  </g>
+  <g>
+    <clipPath id="clip_290"><rect x="0" y="272" width="0" height="26">
+      <animate attributeName="width" values="0;840" dur="2.2s" begin="11.0s" fill="freeze" calcMode="linear"/>
+    </rect></clipPath>
+    <text x="40" y="290" font-size="15.5" style="font-family:'JetBrains Mono','Courier New',monospace" clip-path="url(#clip_290)">
+      <tspan fill="#35e0c4">[✓]</tspan><tspan fill="#e7ecf2"> Broken Access Control &amp; IDOR &#8212; 5,184/5,184 complete</tspan>
+    </text>
+  </g>
+
+<rect x="0" y="0" width="900" height="420" rx="18" fill="none" stroke="#35e0c4" stroke-opacity="0.22" stroke-width="1.5"/>
+</g>
+</svg>

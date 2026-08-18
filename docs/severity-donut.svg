@@ -1,0 +1,91 @@
+<svg viewBox="0 0 620 400" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+  <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#35e0c4"/>
+    <stop offset="55%" stop-color="#8b7cf6"/>
+    <stop offset="100%" stop-color="#5aa9ff"/>
+  </linearGradient>
+  <linearGradient id="brandGradH" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#35e0c4"/>
+    <stop offset="50%" stop-color="#8b7cf6"/>
+    <stop offset="100%" stop-color="#5aa9ff"/>
+  </linearGradient>
+  <radialGradient id="glowTeal" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#35e0c4" stop-opacity="0.55"/>
+    <stop offset="100%" stop-color="#35e0c4" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="glowPurple" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#8b7cf6" stop-opacity="0.5"/>
+    <stop offset="100%" stop-color="#8b7cf6" stop-opacity="0"/>
+  </radialGradient>
+  <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%">
+    <feGaussianBlur stdDeviation="4.2" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+  <filter id="bigGlow" x="-100%" y="-100%" width="300%" height="300%">
+    <feGaussianBlur stdDeviation="12" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+  <pattern id="gridPattern" width="28" height="28" patternUnits="userSpaceOnUse">
+    <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#35e0c4" stroke-opacity="0.06" stroke-width="1"/>
+  </pattern>
+</defs>
+
+<clipPath id="fc2"><rect width="620" height="400" rx="18"/></clipPath>
+<g clip-path="url(#fc2)">
+<rect width="620" height="400" fill="#080a0e"/><rect width="620" height="400" fill="url(#gridPattern)"/>
+<circle cx="165" cy="210" r="230" fill="url(#glowTeal)" opacity="0.45"/>
+
+<text x="28" y="40" font-size="14" letter-spacing="3" fill="#7c8798" style="font-family:'JetBrains Mono','Courier New',monospace">SEVERITY DISTRIBUTION</text>
+
+<circle cx="165" cy="210" r="100" fill="none" stroke="#0d1017" stroke-width="30"/>
+
+  <circle cx="165" cy="210" r="100" fill="none" stroke="#ff4d6a" stroke-width="30"
+    stroke-dasharray="509.6 628.3" stroke-dashoffset="0.0"
+    stroke-linecap="butt" transform="rotate(-90 165 210)" filter="url(#softGlow)" opacity="0.94">
+    <animate attributeName="stroke-dasharray" values="0 628.3; 509.6 628.3" dur="1.6s" begin="0.00s" fill="freeze" calcMode="spline" keySplines="0.22 1 0.36 1"/>
+  </circle>
+  <circle cx="165" cy="210" r="100" fill="none" stroke="#ffb648" stroke-width="30"
+    stroke-dasharray="72.7 628.3" stroke-dashoffset="-509.6"
+    stroke-linecap="butt" transform="rotate(-90 165 210)" filter="url(#softGlow)" opacity="0.94">
+    <animate attributeName="stroke-dasharray" values="0 628.3; 72.7 628.3" dur="1.6s" begin="0.15s" fill="freeze" calcMode="spline" keySplines="0.22 1 0.36 1"/>
+  </circle>
+  <circle cx="165" cy="210" r="100" fill="none" stroke="#5aa9ff" stroke-width="30"
+    stroke-dasharray="45.9 628.3" stroke-dashoffset="-582.3"
+    stroke-linecap="butt" transform="rotate(-90 165 210)" filter="url(#softGlow)" opacity="0.94">
+    <animate attributeName="stroke-dasharray" values="0 628.3; 45.9 628.3" dur="1.6s" begin="0.30s" fill="freeze" calcMode="spline" keySplines="0.22 1 0.36 1"/>
+  </circle>
+
+<text x="165" y="206" font-size="30" font-weight="800" fill="#e7ecf2" text-anchor="middle" style="font-family:'JetBrains Mono','Courier New',monospace">100%</text>
+<text x="165" y="229" font-size="11" letter-spacing="2" fill="#7c8798" text-anchor="middle" style="font-family:'JetBrains Mono','Courier New',monospace">RATED</text>
+
+
+  <g transform="translate(350,118)">
+    <rect width="14" height="14" rx="4" fill="#ff4d6a"/>
+    <text x="22" y="12" font-size="12.5" fill="#e7ecf2" style="font-family:'JetBrains Mono','Courier New',monospace" font-weight="600">P1 &#183; CRITICAL</text>
+    <text x="22" y="34" font-size="22" fill="#ff4d6a" style="font-family:'JetBrains Mono','Courier New',monospace" font-weight="800">248,544</text>
+    <text x="185" y="34" font-size="14" fill="#7c8798" style="font-family:'JetBrains Mono','Courier New',monospace" text-anchor="end">81.1%</text>
+  </g>
+  <g transform="translate(350,192)">
+    <rect width="14" height="14" rx="4" fill="#ffb648"/>
+    <text x="22" y="12" font-size="12.5" fill="#e7ecf2" style="font-family:'JetBrains Mono','Courier New',monospace" font-weight="600">P2 &#183; HIGH</text>
+    <text x="22" y="34" font-size="22" fill="#ffb648" style="font-family:'JetBrains Mono','Courier New',monospace" font-weight="800">35,449</text>
+    <text x="185" y="34" font-size="14" fill="#7c8798" style="font-family:'JetBrains Mono','Courier New',monospace" text-anchor="end">11.6%</text>
+  </g>
+  <g transform="translate(350,266)">
+    <rect width="14" height="14" rx="4" fill="#5aa9ff"/>
+    <text x="22" y="12" font-size="12.5" fill="#e7ecf2" style="font-family:'JetBrains Mono','Courier New',monospace" font-weight="600">P3 &#183; MEDIUM</text>
+    <text x="22" y="34" font-size="22" fill="#5aa9ff" style="font-family:'JetBrains Mono','Courier New',monospace" font-weight="800">22,399</text>
+    <text x="185" y="34" font-size="14" fill="#7c8798" style="font-family:'JetBrains Mono','Courier New',monospace" text-anchor="end">7.3%</text>
+  </g>
+
+<rect x="0" y="0" width="620" height="400" rx="18" fill="none" stroke="#35e0c4" stroke-opacity="0.22" stroke-width="1.5"/>
+</g>
+</svg>
