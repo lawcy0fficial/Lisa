@@ -20,7 +20,7 @@
 **306,392 test cases. 208 categories. Every single one rated P1–P3 by real exploitability — not by which OWASP list it came from.**
 Real testing playbooks with actual tools and copy-paste payloads. A command palette. Private notes. Installable as an app. Runs entirely in your browser — nothing you check off, flag, or write down ever leaves your device.
 
-**[▶ Open the live checklist](https://lawxxz.github.io/)**
+**[▶ Open the live checklist](https://lisa-lists.github.io/)**
 
 </div>
 
